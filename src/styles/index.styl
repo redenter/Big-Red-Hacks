@@ -1,0 +1,69 @@
+@import 'nib'
+@import './font-awesome.css'
+
+*
+  box-sizing border-box
+
+body
+  background rgb(106,199,255)
+  background-image url('/assets/bg.png')
+  font-size 16px
+  font-family Lato, sans-serif
+  min-width 1000px
+  color rgb(60,60,60)
+
+a
+  text-decoration none
+  outline 0
+  color rgb(60,60,60)
+
+.title
+  color #fff
+  text-shadow 0 1px rgba(0,0,0,.15)
+  text-align center
+  padding-top 15%
+  font-size 80px
+  letter-spacing 3px
+  .fa-paw
+    margin-right 10px
+
+.subtitle
+  color #fff
+  text-shadow 0 1px rgba(0,0,0,.15)
+  text-align center
+  padding-top 10%
+  font-size 60px
+  letter-spacing 1px
+  .fa-check-circle
+    margin-right 15px
+
+.wrapper
+  width 100%
+  text-align center
+  .store-data,.branch-data
+    display inline-block
+    margin-top 30px
+  input
+    display block
+    background #fff
+    border 0 solid
+    height 40px
+    width 450px
+    margin-bottom 20px
+    font-size 20px
+    padding-left 10px
+    padding-right 10px
+    &:focus
+      outline none
+  .join,.add
+    background #FFB462
+    color #fff
+    letter-spacing 1.5px
+    font-size 18px
+    border-bottom 3px solid #F6A173
+  .map
+    img
+      margin-top -20px
+      margin-bottom 20px
+      width 450px
+      height auto
