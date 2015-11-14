@@ -1,0 +1,22 @@
+<template name="modelOffer">
+    <div class ="offer">
+    	<div style="background-image:url('/placeholder.png')" class="item"><img src="/bubble.png" class="bubble">
+         	<div class="content">
+            <div class="name">{{offerName}} </div>
+             <div class="desc"><span class="fa fa-quote-left"> </span><span>{{offerDesc}}</span><span class="fa fa-quote-right"></span></div>
+            <div class="tag limit"><span class="fa fa-users"></span><span>{{currentBuyIn}}</span>
+            </div>
+            <div class="tag cost"><span class="fa fa-dollar"></span><span>{{currentPrice}} </span></div>
+            <div class="tag dist"><span class="fa fa-map-pin"></span><span>0.2 mi</span></div>
+           
+          </div>
+          <div class="item-overlay"><span class="fa fa-clock-o"></span><span>29:59</span>
+            <div class="direction">
+              <span class="fa fa-dollar"></span><span>{{currentPrice}}</span> 
+              <span class="fa fa-map-o" style="margin-left:10px"></span><span>Go to store</span>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</template>

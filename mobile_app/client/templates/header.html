@@ -1,0 +1,29 @@
+<template name="componentHeader">
+    <h1><a href="/">Strplp</a></h1>
+    <div class="navbar">
+        <ul class="navbar-list">
+            <a href="/">
+                <li>Home</li>
+            </a>
+               <a href="/offers">
+                <li>Offers</li>
+            </a>
+            {{#if loggedIn}}
+            <a href="/account">
+                <li>
+                    {{#if name}}
+                    {{name}}'s
+                    {{else}}
+                    Your {{name}}
+                    {{/if}}
+                    Account
+                </li>
+            </a>
+            {{/if}}
+            <li class="login">
+              {{> loginButtons}}
+            </li>
+        </ul>
+    </div>
+</template>
+

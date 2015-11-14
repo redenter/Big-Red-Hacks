@@ -1,0 +1,16 @@
+<template name="offerDetail">
+    <div id="page_cars_details" class="page">
+        {{#with offer}}
+        <div class="page_right">
+            {{> modelOffer}}
+        </div>
+        <h2>The {{offerName}} {{currDesc}}</h2>
+        <p>
+            Description: {{offerDesc}}
+        </p>
+        <br /><br />
+         <br />
+        {{/with}}
+	</div>
+</template>
+
