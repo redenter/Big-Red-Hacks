@@ -1,0 +1,78 @@
+@import './font-awesome.css';
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #6ac7ff;
+  background-image: url("/bg_grey.png");
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  min-width: 1000px;
+  color: #3c3c3c;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+  color: #3c3c3c;
+}
+.title {
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.15);
+  text-align: center;
+  padding-top: 15%;
+  font-size: 80px;
+  letter-spacing: 3px;
+}
+.title .fa-paw {
+  margin-right: 10px;
+}
+.subtitle {
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.15);
+  text-align: center;
+  padding-top: 10%;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+.subtitle .fa-check-circle {
+  margin-right: 15px;
+}
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+.wrapper .store-data,
+.wrapper .branch-data {
+  display: inline-block;
+  margin-top: 30px;
+}
+.wrapper input {
+  display: block;
+  background: #fff;
+  border: 0 solid;
+  height: 40px;
+  width: 450px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wrapper input:focus {
+  outline: none;
+}
+.wrapper .join,
+.wrapper .add {
+  background: #ffb462;
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  border-bottom: 3px solid #f6a173;
+}
+.wrapper .map img {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  width: 450px;
+  height: auto;
+}

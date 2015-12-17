@@ -1,0 +1,45 @@
+<template name="allBranch">
+
+    <div class="left-branches">
+        <div class="top-logo"><img src="/logo.png"></div>
+
+        {{#each branches}}
+            <div class="branch" branchid={{_id}} retailerid={{retailerId}}>
+                <span class="fa fa-building"> </span>
+                <span> {{name}} </span>
+            </div>
+        {{/each}}
+        <div class="btn-add"><span class="fa fa-plus"></span></div>
+        
+    <div class="modal">
+        {{> addBranch}}
+    </div>
+    </div>
+  <div class = "greetings">
+    <span class="fa fa-user"> </span>
+    <span>Macy's</span>
+  </div>
+    <div class="right-offers">
+
+      <div class="btn-add"><span class="fa fa-plus"></span></div>
+        <div class="offers">
+        {{#each couponslist}}
+
+          <div style="background-image:url('http://placehold.it/200x200')" class="offer"> 
+          <div class="name">{{offerName}}</div>
+          <div class="desc"><span class="fa fa-quote-left"> </span><span>{{offerDesc}}</span><span class="fa fa-quote-right"></span>
+          </div>
+          <div class="limit"><span class="fa fa-users"></span><span>{{custLimit}}</span></div>
+          </div>
+        {{/each}}
+        </div>
+
+        
+    <div class="right-modal">
+         
+        {{> coupons}}
+        
+    </div>
+    </div>
+    
+</template>

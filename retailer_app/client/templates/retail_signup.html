@@ -1,0 +1,28 @@
+<template name="retailSignup">
+	{{#if loggedIn}}
+	<div> Welcome {{userName}} </div>
+    <form class="form-retailerSignup">
+          <input class="retailName" type="text" placeholder="Your Name" value="{{retailerNamePending}}" />
+          <input class="retailDescription" type="text" placeholder="Describe what you do" value="{{retailerDescPending}}" />
+          <button type="submit">Submit</button>
+    </form>
+    {{> retailersAll}}
+
+    <div> Get Specific Retailer Information 
+
+    <input class="getRetailer" type="text" placeholder="Retailer Id" value="{{retailerIDPending}}" /> 
+    <input class="retailerFetch" type="button" value="Get"/>
+
+    {{#with loggedInRetailer}}
+    <p> {{_id}}  </p>
+    <p> {{name}} </p>
+    <p> {{desc}} </p>
+
+    {{/with}}
+
+    </div>
+
+    {{else}}
+    <div> You should be logged in to view to this </div>
+    {{/if}}
+</template>

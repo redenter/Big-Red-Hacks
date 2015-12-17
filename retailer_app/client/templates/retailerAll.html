@@ -1,0 +1,13 @@
+<template name="retailersAll">
+    <ul class="retailers">
+        {{#each retailers}}
+            <li>
+            	<p> {{_id}} </p>
+                <p> {{name}} </p>
+                <p> {{desc}} </p>
+                <p> {{userid}} </p>
+            </li>
+        {{/each}}
+    </ul>
+
+</template>
